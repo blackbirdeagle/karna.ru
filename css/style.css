@@ -1,0 +1,2191 @@
+@font-face{
+    font-family: 'CirceRegular';
+    src: url('../fonts/Circe-Regular.eot');
+    src: url('../fonts/Circe-Regular.eot?iefix') format('eot'),
+    url('../fonts/Circe-Regular.woff') format('woff'),
+    url('../fonts/Circe-Regular.ttf') format('truetype'),
+    url('../fonts/Circe-Regular.svg#webfont') format('svg');
+}
+
+@font-face{
+    font-family: 'CirceBold';
+    src: url('../fonts/Circe-Bold.eot');
+    src: url('../fonts/Circe-Bold.eot?iefix') format('eot'),
+    url('../fonts/Circe-Bold.woff') format('woff'),
+    url('../fonts/Circe-Bold.ttf') format('truetype'),
+    url('../fonts/Circe-Bold.svg#webfont') format('svg');
+}
+
+@font-face {
+    font-family: 'Antiqua Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Antiqua Bold'), local('Antiqua-Bold'),
+    url(../fonts/antiqua-bold.woff) format('woff'),
+    url(../fonts/antiqua-bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Book Antiqua';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Book Antiqua'), local('BookAntiqua-Regular'),
+    url(../fonts/book-antiqua.woff) format('woff'),
+    url(../fonts/book-antiqua.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'PTSansNarrow';
+    font-style: normal;
+    font-weight: 400;
+    src: local('PTSansNarrow'), local('PTSansNarrow-Regular'),
+    url(../fonts/pt-sans-narrow.woff) format('woff'),
+    url(../fonts/pt-sans-narrow.ttf) format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-shadow: none;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+html{
+
+}
+
+body{
+    color: #474747;
+    font-size: 14px;
+    font-family: 'CirceRegular';
+    line-height: 1;
+}
+
+a{
+    color: #000;
+
+}
+
+a:hover{
+    color: #000 ;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clear{
+    clear: both;
+}
+
+h1{
+    font-size: 30px;
+    font-family: 'Antiqua Bold';
+    text-transform: uppercase;
+    color: #231f20;
+}
+/*--------------------Оплата и доставка---------------------------*/
+.header{
+    background-color: #fae3dc;
+    padding: 25px 0;
+}
+
+.header__left{
+    overflow: hidden;
+    margin-top: 13px;
+}
+
+.show__menu{
+    margin-right: 38px;
+    display: block;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/mob.png);
+    width: 43px;
+    height: 9px;
+}
+
+.top__left__menu{
+    float: left;
+    overflow: hidden;
+}
+
+.top__left__menu li{
+    float: left;
+    margin-right: 28px;
+}
+
+.top__left__menu li:last-child{
+    margin-right: 0;
+}
+
+.top__left__menu li a{
+    text-decoration: underline;
+}
+
+.top__left__menu li a:hover{
+    text-decoration: none;
+}
+
+.logo{
+    display: block;
+    width: 198px;
+    height: 94px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/logo.png);
+    margin: 0 auto;
+}
+
+.header__right{
+    overflow: hidden;
+    margin-top: 13px;
+}
+
+.social{
+    overflow: hidden;
+    float: left;
+    margin-right: 59px;
+}
+
+.social li{
+    float: left;
+    margin-right: 11px;
+}
+
+.social li:last-child{
+    margin-right: 0;
+}
+
+.lk__link{
+    display: block;
+    float: left;
+    text-decoration: underline;
+    margin-right: 33px;
+}
+
+.lk__link:hover{
+    text-decoration: none;
+}
+
+.top__basket{
+    display: block;
+    float: left;
+    width: 102px;
+    height: 56px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/basket.png);
+    text-align: center;
+    font-size: 11px;
+    padding-top: 8px;
+    padding-left: 20px;
+}
+
+.top__basket span{
+    font-size: 30px;
+    font-family: 'CirceBold';
+}
+
+.top__menu{
+    padding: 12px 0;
+}
+
+.hor__line {
+    background: linear-gradient(to top, #f3ebe9, #e2cdc9);
+    height: 4px;
+}
+
+.top__menu__wrapper{
+
+    width: 880px;
+    margin: 0 auto;
+}
+
+.top__menu__wrapper ul{
+
+    float: left;
+    margin-right: 17px;
+}
+
+.top__menu__wrapper ul li{
+    float: left;
+}
+
+.top__menu__wrapper ul li a{
+    text-transform: uppercase;
+    padding: 0 18px;
+    display: block;
+    background-image: url(../images/list.png);
+    background-repeat: no-repeat;
+    background-position: 100% center;
+}
+
+.top__menu__wrapper ul li:first-child a{
+    padding-left: 0;
+}
+
+.show__search{
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/search.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content{
+    padding: 40px 0 118px 0;
+}
+
+.breadcrumb{
+    background: none;
+    padding: 0;
+}
+
+.breadcrumb li a{
+    color: #9e9e9d;
+}
+
+.delivery__list{
+    margin-top: 85px;
+}
+
+.delivery__item{
+    margin-bottom: 65px;
+}
+
+.delivery__item__name{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Antiqua Bold';
+    margin-top: 33px;
+    color: #231f20;
+}
+
+.delivery__item__text{
+    font-size: 16px;
+    margin-top: 23px;
+    line-height: 1.5;
+}
+
+.footer{
+    padding: 56px 0;
+    background-color: #fae3dc;
+}
+
+.bottom__menu__head{
+    font-size: 30px;
+    color: #231f20;
+    font-family: 'Book Antiqua';
+    margin-bottom: 25px;
+}
+
+.bottom__menu li{
+    margin-bottom: 17px;
+}
+
+.bottom__menu li:last-child{
+    margin-bottom: 17px;
+}
+
+.bottom__menu li a{
+    text-transform: uppercase;
+}
+
+.payment__img{
+    float: right;
+    padding-right: 63px;
+    border-right: 1px solid #231f20;
+}
+
+.bottom__social{
+    margin-right: 0;
+    float: right;
+    padding-right: 63px;
+    border-right: 1px solid #231f20;
+    margin-top: 70px;
+}
+
+.bottom__social li{
+    margin-right: 22px;
+}
+
+.bottom__social li:last-child{
+    margin-right: 0;
+}
+
+.bottom__contacts{
+    float: right;
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+
+.bottom__contacts a{
+    display: block;
+    float: right;
+    font-size: 24px;
+    color: #231f20;
+    margin-bottom: 13px;
+}
+
+.bottom__contacts p{
+    float: right;
+    color: #231f20;
+}
+
+.bottom__email{
+    display: block;
+    float: right;
+    text-transform: uppercase;
+    color: #231f20;
+    padding-top: 31px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: url(../images/mail.png);
+}
+
+.copyright{
+    color: #231f20;
+    font-family: 'Book Antiqua';
+    margin-top: 70px;
+}
+
+.drop__menu{
+    position: relative;
+}
+
+.drop__menu ul{
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    float: none;
+    z-index: 9;
+    padding: 10px;
+    width: 280px;
+    margin-top: 10px;
+}
+
+.drop__menu ul li{
+    float: none;
+    margin-bottom: 10px;
+}
+
+.drop__menu ul li a{
+    background: none;
+    padding: 0;
+}
+
+.footer__inner, .header__inner{
+    background-color: #f1ebe5;
+}
+/*-----------------Оформление------------------*/
+.list__head{
+    padding: 11px 0;
+    background-color: #fae3dc;
+    margin-top: 30px;
+    margin-bottom: 4px;
+}
+
+.list__head p{
+    color: #482c38;
+}
+
+.list__prod__item{
+    margin-bottom: 11px;
+}
+
+.list__prod__item__delete{
+    font-size: 18px;
+    color: #b9857a;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+}
+
+.list__prod__item__delete{
+    margin-top: 25px;
+    font-size: 16px !important;
+}
+
+.list__prod__item img{
+    width: 100%;
+}
+
+.list__prod__item__name{
+    display: block;
+    margin-top: 23px;
+    font-size: 12px;
+}
+
+.list__prod__item p{
+    color: #482c38;
+    margin-top: 33px;
+}
+
+.list__prod__item__kolvo{
+    position: relative;
+    padding: 23px 9px;
+    border-left: 1px solid #fae3dc;
+    border-right: 1px solid #fae3dc;
+}
+
+.list__prod__item__kolvo input{
+    height: 34px;
+    border: 1px solid #e0e0e0;
+    padding: 0 67px 0 9px;
+    width: 100%;
+}
+
+.list__prod__item__kolvo a{
+    display: block;
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    top: 23px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #e0e0e0;
+}
+
+.list__prod__item__kolvo__sub{
+    right: 9px;
+    background-image: url(../images/sub.jpg);
+}
+
+.list__prod__item__kolvo__sum{
+    right: 40px;
+    background-image: url(../images/sum.jpg);
+}
+
+.promo__code{
+    padding: 7px 0;
+    border-top: 1px solid #b9857a;
+    border-bottom: 1px solid #b9857a;
+    margin-top: 12px;
+}
+
+.promo__code p{
+    text-align: center;
+    color: #404040;
+    font-size: 16px;
+    margin-top: 11px;
+}
+
+.apply__promo{
+    display: block;
+    width: 153px;
+    height: 38px;
+    background-color: #b9857a;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 13px;
+    transition-duration: 0.5s;
+}
+
+.apply__promo:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #b49892;
+}
+
+.summ__order{
+    margin-top: 35px;
+}
+
+.summ__order p{
+    text-align: right;
+}
+
+.summ__order p span{
+    font-size: 30px;
+    color: #696868;
+    font-family: 'Book Antiqua';
+    margin-lefT: 38px;
+}
+
+.checkout{
+    width: 180px;
+    display: block;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    float: right;
+    margin-top: 28px;
+    padding-top: 14px;
+    text-transform: uppercase;
+    background-color: #58b77a;
+    transition-duration: 0.5s;
+}
+
+.checkout:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #67cb8a;
+}
+
+.variants__delivery{
+    padding-left: 130px;
+    margin-top: 42px;
+}
+
+.variants__delivery__head{
+    font-size: 18px;
+    color: #482c38;
+    margin-bottom: 22px;
+}
+
+.variants__delivery__name{
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #482c38;
+}
+
+.variants__delivery__text{
+    color: #482c38;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.variants__delivery__text span{
+    text-transform: uppercase;
+    color: #ff1010;
+}
+
+/*-------------------Главная страница--------------------*/
+.index__wrap{
+    min-height: 806px;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
+.header__index{
+    position: relative;
+    z-index: 0;
+    background-color: #fff;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.top__menu__index{
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.header__content{
+    min-height: 618px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.block__h1{
+    width: 883px;
+    height: 364px;
+    background-image: url(../images/h1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 51px auto 0 auto;
+    padding-top: 81px;
+    padding-left: 305px;
+}
+
+.block__h1 h1{
+    font-family: 'Book Antiqua';
+    font-size: 30px;
+    line-height: 1;
+    text-transform: none;
+    color: #231f20;
+}
+
+.block__h1 h1 span{
+    font-family: 'Antiqua Bold';
+    font-size: 60px;
+}
+
+.categories__index{
+    margin-top: -137px;
+}
+
+.cat__row{
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.cat__big{
+    width: 49%;
+    height: 444px;
+    border: 10px solid #f7f6f4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/pokr.jpg);
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 1%;
+}
+
+.cat__item__name{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #b9857a;
+    padding: 12px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.cat__center{
+    width: 24%;
+    float: left;
+    margin-right: 1%;
+}
+
+.postelnoe__belyo{
+    width: 100%;
+    border: 10px solid #f7f6f4;
+    position: relative;
+    display: block;
+    height: 227px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/belyo.jpg);
+}
+
+.akciya_15{
+    width: 100%;
+    border: 10px solid #f7f6f4;
+    display: block;
+    height: 217px;
+    background-color: #fae3dc;
+    padding: 21px 12px;
+}
+
+.akciya_15 p{
+    text-align: center;
+}
+
+.akciya_15__name{
+    font-size: 30px;
+    font-family: 'CirceBold';
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 18px;
+    color: #231f20;
+}
+
+.akciya_15__value{
+    font-size: 72px;
+    font-family: 'Antiqua Bold';
+    color: #231f20;
+    margin-bottom: 10px;
+}
+
+.akciya_15__desc{
+    text-transform: uppercase;
+}
+
+.cat__right{
+    width: 25%;
+    float: left;
+}
+
+.cat__right__slogan{
+    position: relative;
+    height: 295px;
+    background-color: #fff;
+    border: 10px solid #999999;
+    margin-top: 149px;
+}
+
+.cat__right__slogan p{
+    position: absolute;
+    bottom: 28px;
+    left: 28px;
+    font-size: 30px;
+    color: #999999;
+    font-family: 'Book Antiqua';
+    padding-right: 40px;
+}
+
+.cat__left{
+    width: 24%;
+    float: left;
+    margin-right: 1%;
+}
+
+.cat__left__slogan{
+    position: relative;
+    height: 295px;
+    background-color: #fff;
+    border: 10px solid #999999;
+    margin-top: 149px;
+}
+
+.cat__left__slogan p{
+    position: absolute;
+    bottom: 28px;
+    left: 28px;
+    font-size: 30px;
+    color: #999999;
+    font-family: 'Book Antiqua';
+    padding-right: 40px;
+}
+
+.halaty{
+    width: 100%;
+    border: 10px solid #f7f6f4;
+    position: relative;
+    display: block;
+    height: 227px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/halaty.jpg);
+}
+
+.akciya_15 a{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cat__big1{
+    margin-right: 0;
+    background-image: url(../images/novorogd.jpg);
+}
+
+.new__products{
+    padding: 45px 0 60px 0;
+}
+
+.new__products h2{
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Antiqua Bold';
+    line-height: 0.5;
+}
+
+.new__products h2 span{
+    font-size: 30px;
+    font-family: 'Book Antiqua';
+}
+
+.product__item{
+    display: block;
+    margin-bottom: 60px;
+}
+
+.product__item:hover{
+    text-decoration: none;
+}
+
+#newprodSlider{
+    margin-top: 60px;
+}
+
+.product__item__name{
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.product__item__img{
+    position: relative;
+    min-height: 196px;
+    margin-bottom: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.product__item__img img{
+    width: 100%;
+}
+
+.product__item__img__new{
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/new.png);
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    margin-left: -17px;
+}
+
+.product__item__name__price{
+    font-size: 24px;
+    font-family: 'Antiqua Bold';
+    text-align: center;
+    line-height: 0.7;
+    margin-bottom: 20px;
+}
+
+.product__item__name__price span{
+    font-size: 12px;
+    font-family: 'Book Antiqua';
+}
+
+.product__item__name__detail{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    color: #474747;
+    height: 26px;
+    border: 1px solid #999999;
+    padding-top: 6px;
+}
+
+.owl-carousel .owl-nav{
+    position: absolute;
+    width: 220px;
+    left: 50%;
+    margin-left: -110px;
+    bottom: -44px;
+
+}
+
+.owl-carousel .owl-nav .owl-prev{
+    top: 50%;
+    margin-top: -19px;
+    left: 0;
+    position: absolute;
+}
+
+.owl-carousel .owl-nav .owl-next{
+    top: 50%;
+    margin-top: -19px;
+    right: 0;
+    position: absolute;
+}
+
+#newprodSlider .owl-dots{
+    position: absolute;
+    height: 5px;
+    left: 50%;
+    bottom: -44px;
+}
+
+#newprodSlider .owl-dots .owl-dot{
+    float: left;
+    margin-right: 17px;
+}
+
+#newprodSlider .owl-dots .owl-dot:last-child{
+    margin-right: 0;
+}
+
+#newprodSlider .owl-dots .owl-dot span{
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-image: url(../images/list.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#newprodSlider .owl-dots .owl-dot.active span{
+    background-image: url(../images/list_active.png);
+}
+
+#newprodSlider .product__item{
+    margin-bottom: 0;
+}
+
+.home__texttile{
+    background-image: url(../images/home_textile.png);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    padding: 185px 0;
+    margin-top: 30px;
+}
+
+.home__texttile__wrap{
+    border: 1px solid #d38a7d;
+    padding: 58px 140px;
+    font-family: 'Book Antiqua';
+    color: #231f20;
+    text-align: center;
+}
+
+.home__texttile__wrap p:nth-child(1){
+    font-size: 24px;
+}
+
+.home__texttile__wrap p:nth-child(2){
+    font-size: 18px;
+    margin: 50px 0;
+    line-height: 1.5;
+}
+
+.home__texttile__wrap p:nth-child(3){
+    font-size: 18px;
+    font-family: 'Antiqua Bold';
+}
+
+.articles{
+    padding: 20px 0 100px 0;
+}
+
+.articles__item:hover{
+    text-decoration: none;
+}
+
+.articles__item__name{
+    min-height: 58px;
+    margin-top: 13px;
+    font-size: 18px;
+    font-family: 'Book Antiqua';
+    padding: 0 15px;
+}
+
+.articles__item__text{
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+/*--------------------------------------------------------*/
+body div.slider{
+    overflow:hidden;
+    position:relative;
+    width:100%;
+}
+
+body div.slider ul {
+    margin:0;
+    padding:0;
+}
+
+body div.slider li {
+    float:left;
+    list-style:none;
+    margin:0 0 0 0;
+    text-align:center;
+    font-size:25px;
+}
+
+body div.slider li a{
+    display: block;
+}
+
+body div.slider li a img{
+    z-index: -1;
+    position: relative;
+}
+
+body div.slider li a p{
+    font-size: 30px;
+    font-family: 'Book Antiqua';
+    text-align: left;
+    margin-left: 25px;
+    padding-left: 11px;
+    padding-top: 30px;
+    border-left: 1px solid #231f20;
+    margin-top: -21px;
+    z-index: 1;
+}
+
+.prev-slide{
+    display: block;
+    width: 21px;
+    height: 39px;
+    background-image: url(../images/prev.png);
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    left: 337px;
+}
+
+.next-slide{
+    display: block;
+    width: 21px;
+    height: 39px;
+    background-image: url(../images/next.png);
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    right: 337px;
+}
+
+.controls{
+    position: relative;
+    width: 896px;
+    margin: 16px auto;
+    overflow: hidden;
+    padding: 23px 0;
+}
+
+.subscription__form{
+    padding: 15px 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+.subscription__form__title{
+    font-size: 30px;
+    font-family: 'Book Antiqua';
+    padding: 17px 0 17px 85px;
+    background-image: url(../images/box.png);
+    background-repeat: no-repeat;
+    background-position: 0 center;
+}
+
+.subscription__form__wrap{
+    position: relative;
+    margin-top: 11px;
+}
+
+.subscription__form__wrap input[type = "text"]{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #e0e0e0;
+    padding: 0 180px 0 20px;
+    text-transform: uppercase;
+    color: #474747;
+}
+
+.subscription__form__wrap a{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    width: 180px;
+    height: 40px;
+    background-color: #58b77a;
+    padding-top: 15px;
+}
+
+.catalog__filters{
+    padding: 15px 0;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.catalog__filters h1 span{
+    font-size: 14px;
+    font-family: 'CirceRegular';
+    color: #474747;
+    text-transform: none;
+}
+
+.filters__wrap{
+    overflow: hidden;
+    float: right;
+}
+
+.filters{
+    overflow: hidden;
+    border-right: 1px solid #b7b7b7;
+    float: left;
+    padding: 7px 0;
+}
+
+.filters li{
+    float: left;
+    margin-right: 26px;
+}
+
+.filters li a{
+    color: #474747;
+    text-decoration: underline;
+}
+
+.filters li a.active{
+    text-decoration: none;
+}
+
+.filters li a:hover{
+    text-decoration: none;
+}
+
+.sorted{
+    float: left;
+    overflow: hidden;
+    padding: 7px 0;
+}
+
+.sorted li{
+    float: left;
+    margin-right: 13px;
+}
+
+.sorted li:last-child{
+    margin-right: 0;
+}
+
+.sorted li:first-child{
+    margin-left: 26px;
+}
+
+.sorted li a{
+    text-decoration: underline;
+}
+
+.sorted li a:hover{
+    text-decoration: none;
+}
+
+.sorted li a.active{
+    text-decoration: none;
+}
+
+.catalog__products{
+    padding: 44px 0;
+}
+
+.supplies{
+    margin-bottom: 52px;
+}
+
+.supplies h2{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 36px;
+    color: #686868;
+    font-family: 'Antiqua Bold';
+}
+
+.product__card{
+    padding: 17px 0;
+}
+
+.product__card h1{
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.card__price{
+    overflow: hidden;
+    margin-top: 28px;
+}
+
+.old__price{
+    margin-right: 36px;
+    float: left;
+    color: #c7c7c7;
+    text-decoration: line-through;
+    font-size: 18px;
+}
+
+.old__price span{
+    font-size: 12px;
+}
+
+.new__price{
+    float: left;
+    color: #696868;
+    font-size: 48px;
+    font-family: 'Antiqua Bold';
+}
+
+.new__price span{
+    font-size: 22px;
+}
+
+.card__parameters{
+    margin-top: 50px;
+}
+
+.row__param{
+    margin-bottom: 24px;
+}
+
+.card__parameters__size{
+    overflow: hidden;
+}
+
+.card__size{
+    float: left;
+    margin-right: 6px;
+    width: 94px;
+    display: block;
+    text-align: center;
+    color: #fff;
+    height: 33px;
+    color: #74706e;
+    padding-top: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+.card__size:last-child{
+    margin-right: 0;
+}
+
+.card__size:hover{
+    text-decoration: none;
+}
+
+.card__size.active{
+    border: 1px solid #686868;
+    background-color: #686868;
+    color: #fff;
+}
+
+.card__parameters__color{
+    overflow: hidden;
+}
+
+.card__color{
+    float: left;
+    display: block;
+    width: 94px;
+    height: 74px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 17px;
+    border: 1px solid #edeced;
+}
+
+.card__color:last-child{
+    margin-right: 0;
+}
+
+.card__color.active{
+    border: 2px solid #686868;
+}
+
+.card__color:hover{
+    border: 2px solid #686868;
+}
+
+.card__parameters___kolvo{
+    position: relative;
+    width: 145px;
+    float: left;
+}
+
+.card__parameters___kolvo input {
+    height: 34px;
+    border: 1px solid #e0e0e0;
+    padding: 0 67px 0 9px;
+    width: 100%;
+}
+
+.card__parameters___kolvo a {
+    display: block;
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #e0e0e0;
+}
+
+.card__parameters___kolvo__sum {
+    right: 32px;
+    background-image: url(../images/sum.jpg);
+}
+
+.card__parameters___kolvo__sub {
+    right: 0;
+    background-image: url(../images/sub.jpg);
+}
+
+.unit{
+    display: block;
+    float: left;
+    margin-left: 10px;
+    color: #74706e;
+    margin-top: 10px;
+}
+
+.add__button__wrap{
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.add__button__wrap a{
+    display: block;
+    width: 260px;
+    height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+.add__basket{
+    float: left;
+    color: #fff;
+    background-color: #b9857a;
+}
+
+.add__basket:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+.add__favorites{
+    float: right;
+    border: 1px solid #e0e0e0;
+    color: #74706e;
+}
+
+.add__favorites:hover{
+    text-decoration: none;
+    color: #74706e;
+}
+
+.menu__description{
+    overflow: hidden;
+    margin-top: 70px;
+    border-bottom: 2px solid #d7d7d7;
+}
+
+.menu__description li{
+    float: left;
+    margin-right: 46px;
+}
+
+.menu__description li a{
+    color: #74706e;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    display: block;
+}
+
+.menu__description li a:hover{
+    text-decoration: none;
+    border-bottom: 2px solid #a9a9a9;
+    color: #404040;
+}
+
+.menu__description li a.active{
+    border-bottom: 2px solid #a9a9a9;
+    color: #404040;
+}
+
+.card__description{
+    display: none;
+    padding: 29px 0;
+}
+
+.card__description p{
+    line-height: 1.5;
+    font-size: 16px;
+    color: #404040;
+}
+
+#card__description{
+    display: block;
+}
+
+.product__gallery{
+    position: relative;
+}
+
+.detail__photo img{
+    width: 100%;
+}
+
+.dop__photo{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.dop__photo img{
+    width: 100%;
+}
+
+.card__new__prod{
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/new.png);
+}
+
+.footer__akcii{
+    background-color: #e0e0e0;
+}
+
+.header__akcii{
+    background-color: #e0e0e0;
+}
+
+.logo_akcii{
+    background-image: url(../images/logo_akcii.png);
+}
+
+.categories__akcii .cat__item__name{
+    background-color: #999999;
+}
+
+.categories__akcii .akciya_15{
+    background-color: #999999;
+}
+
+.hor__line__akcii{
+    background: linear-gradient(to top, #ededed, #e3e3e3);
+}
+
+.akcii__screen{
+    background-color: #e0e0e0;
+    padding: 36px 0;
+    margin-bottom: 8px;
+}
+
+.akcii__screen__wrap{
+    padding: 21px 60px;
+    background-image: url(../images/a_wrap.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    margin-top: 51px;
+    overflow: hidden;
+    position: relative;
+}
+
+.h2__akcii{
+    min-height: 311px;
+    width: 831px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/h2.png);
+    float: right;
+    padding-top: 68px;
+}
+
+.h2__akcii h2{
+    font-size: 30px;
+    font-family: 'Book Antiqua';
+    color: #231f20;
+    padding-left: 75px;
+}
+
+.h2__akcii h2 span{
+    font-size: 60px;
+    font-family: 'Antiqua Bold';
+}
+
+.action__screen__1{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 253px;
+    margin-top: -91px;
+}
+
+.action__screen__1__inner{
+    background-color: #999999;
+    padding: 15px;
+}
+
+.action__screen__1__inner__value{
+    text-align: center;
+    font-size: 72px;
+    color: #231f20;
+    font-family: 'Antiqua Bold';
+}
+
+.action__screen__1__inner__text{
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 17px;
+}
+
+.conditions{
+    display: block;
+    text-align: center;
+    height: 36px;
+    background-color: #fff;
+    color: #231f20;
+    text-transform: uppercase;
+    padding-top: 12px;
+    background-image: url(../images/trg.jpg);
+    background-position: 70% center;
+    background-repeat: no-repeat;
+}
+
+.conditions:hover{
+    text-decoration: none;
+}
+
+.oformlenie__head{
+    padding: 13px 0;
+    background-color: #fae3dc;
+    margin-top: 30px;
+    margin-bottom: 19px;
+}
+
+.head__field{
+    color: #482c38;
+    text-align: right;
+    margin-top: 6px;
+}
+
+.head__field span{
+    font-family: 'PTSansNarrow';
+    color: #ff0000;
+}
+
+.oformlenie__form input[type = "text"]{
+    width: 100%;
+    height: 29px;
+    border: 1px solid #e0e0e0;
+    padding: 0 10px;
+    margin-bottom: 14px;
+}
+
+.oformlenie__form select{
+    width: 100%;
+    height: 29px;
+    border: 1px solid #e0e0e0;
+    padding: 0 10px;
+    margin-bottom: 14px;
+}
+
+.oformlenie__form textarea{
+    width: 100%;
+    resize: none;
+    height: 106px;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    margin-bottom: 14px;
+}
+
+.oformlenie__form input[type = "checkbox"]{
+    float: left;
+    margin-right: 13px;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #8e8f8f;
+}
+
+.delivery__variants p{
+    margin-bottom: 24px;
+    font-family: 'CirceBold';
+    color: #482c38;
+}
+
+.delivery__variants p span{
+    font-family: 'CirceRegular';
+    font-size: 12px;
+    padding-left: 23px;
+    display: block;
+}
+
+.delivery__variants p input{
+    margin-right: 10px;
+}
+
+.variants__delivery__oformlenie{
+    padding-left: 50px;
+}
+
+.order__not__delivery{
+    padding-left: 50px;
+    margin-top: 30px;
+}
+
+.order__list{
+    border-bottom: 1px solid #b9857a;
+    margin-bottom: 14px;
+}
+
+.order__list a{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.order__list .row{
+    margin-bottom: 20px;
+}
+
+.itog__summ__wrap{
+    margin-top: 40px;
+}
+
+.summ__itog{
+    color: #191919;
+}
+
+.summ__itog span{
+    color: #696868;
+    font-size: 30px;
+    font-family: 'Antiqua Bold';
+}
+
+.order__button{
+    display: block;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #58b77a;
+    height: 38px;
+    padding-top: 13px;
+    float: right;
+    width: 180px;
+    transition-duration: 0.5s;
+}
+
+.order__button:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #73c08f;
+}
+
+.oformlenie__head__mobile{
+    display: none;
+    padding: 13px 13px;
+    background-color: #fae3dc;
+    margin-top: 30px;
+    margin-bottom: 19px;
+}
+
+.categories__slider{
+    margin-top: 80px;
+}
+
+.search{
+    position: fixed;
+    z-index: 9;
+    background-color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    display: none;
+}
+
+.search__form input[type = "text"]{
+    width: 100%;
+    height: 40px;
+    padding: 0 80px 0 10px;
+    font-size: 20px;
+}
+
+.search__form form{
+    position: relative;
+}
+
+.search__form input[type = "submit"]{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 40px;
+    cursor: pointer;
+    width: 100px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #58b77a;
+    border: none;
+}
+
+.hide__search{
+    position: absolute;
+    display: block;
+    top: 10px;
+    right: 10px;
+    font-size: 16px;
+    z-index: 10px;
+}
+
+.float__menu{
+    position: fixed;
+    z-index: 20;
+    overflow-y: auto;
+    height: 100%;
+    padding: 40px 20px;
+    background-color: #fff;
+    width: 268px;
+    left: -268px;
+    top: 0;
+}
+
+.float__menu ul li{
+    margin-bottom: 20px;
+}
+
+.float__menu ul li a{
+    font-size: 16px;
+}
+
+.hide__menu{
+    position: absolute;
+    display: block;
+    top: 15px;
+    right: 15px;
+}
+/*--------------------------------------------------------*/
+@media(max-width: 1199px){
+    .add__button__wrap a{
+        width: 200px;
+    }
+
+    .card__parameters__head{
+        margin-bottom: 10px;
+    }
+
+    .filters__wrap{
+        float: none;
+        margin-top: 20px;
+    }
+
+    .top__left__menu li{
+        margin-right: 20px;
+    }
+
+    .show__menu{
+        margin-right: 10px;
+    }
+
+    .lk__link{
+        margin-right: 10px;
+    }
+
+    .social{
+        margin-right: 10px;
+    }
+
+    .variants__delivery{
+        padding-left: 70px;
+    }
+
+    .h2__akcii{
+        width: 644px;
+    }
+}
+
+@media(max-width: 991px){
+    .h2__akcii{
+        background: none;
+        padding-top: 0;
+        float: none;
+        width: auto;
+    }
+
+    .h2__akcii h2{
+        padding: 0;
+        text-align: center;
+    }
+
+    .action__screen__1{
+        position: static;;
+    }
+
+    .action__screen__1{
+        margin: -91px auto 0 auto;
+    }
+
+    .controls{
+        width: 280px;
+    }
+
+    .prev-slide{
+        left: 0;
+    }
+
+    .next-slide{
+        right: 0;
+    }
+
+    .copyright{
+        text-align: center;
+    }
+
+    .social{
+        margin-right: 0;
+    }
+
+    .bottom__menu{
+        margin-bottom: 40px;
+    }
+
+    .bottom__contacts p{
+        float: none;
+    }
+
+    .content{
+        padding: 40px 0 40px 0;
+    }
+
+    .order__not__delivery{
+        padding-left: 0;
+    }
+
+    .variants__delivery{
+        padding-left: 0;
+    }
+
+    .top__menu__wrapper ul li:first-child a{
+        padding-left: 18px;
+    }
+
+    .top__menu__wrapper ul li:last-child a{
+        background: none;
+    }
+
+    .top__basket{
+        float: none;
+        margin-top: 20px;
+    }
+
+    .lk__link{
+        float: none;
+    }
+
+    .top__left__menu li{
+        float: none;
+    }
+
+    .header__left{
+        width: 290px;
+    }
+
+    .logo{
+        margin-top: 20px;
+    }
+
+    .header__right{
+        width: auto;
+        margin: 20px auto 0 auto;
+        margin-top: 0 !important;
+    }
+
+    .social{
+        margin-top: 18px;
+    }
+
+    .lk__link{
+        margin-top: 18px;
+    }
+
+    .top__menu__wrapper{
+        overflow: hidden;
+        width: auto;
+    }
+
+    .top__menu__wrapper ul{
+        width: 80%;
+    }
+
+    .top__menu__wrapper ul li{
+        margin-bottom: 10px;
+    }
+
+    .block__h1{
+        padding-left: 90px;
+        width: auto;
+    }
+
+    .cat__big{
+        width: 100%;
+    }
+
+    .cat__center{
+        width: 49%;
+    }
+
+    .cat__right{
+        width: 49%;
+    }
+
+    .cat__left{
+        width: 49%;
+    }
+
+    .cat__right__slogan, .cat__left__slogan{
+        margin-top: 0;
+        height: 444px;
+    }
+
+}
+
+@media(max-width: 767px){
+    .block__h1 h1 span{
+        font-size: 40px;
+    }
+
+    .block__h1{
+        padding-left: 50px;
+        height: 290px;
+    }
+
+    .filters li{
+        margin-right: 13px;
+    }
+
+    .header__right{
+        margin-left: 34px;
+    }
+
+    .oformlenie__form input[type = "checkbox"]{
+        margin-bottom: 24px;
+    }
+
+    .head__field{
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    .oformlenie__head{
+        display: none;
+    }
+
+    .oformlenie__head__mobile{
+        display: block;
+    }
+
+    .apply__promo{
+        margin: 20px auto;
+    }
+
+    .delivery__item{
+        text-align: center;
+    }
+
+    .home__texttile__wrap{
+        padding: 58px 20px;
+    }
+
+    .home__texttile{
+        padding-bottom: 145px;
+    }
+}
+
+@media(max-width: 576px){
+    .h2__akcii h2 span{
+        font-size: 40px;
+    }
+
+    .list__prod__item__kolvo{
+        border: none;
+    }
+
+    .list__prod__item__delete{
+        margin-bottom: 20px;
+    }
+
+    .list__head{
+        display: none;
+    }
+
+    .bottom__contacts{
+        float: none;
+    }
+
+    .bottom__contacts a{
+        float: none;
+        text-align: center;
+    }
+
+    .bottom__contacts p{
+        text-align: center;
+    }
+
+    .bottom__email{
+        float: none;
+        width: 190px;
+        margin: 0 auto;
+    }
+
+    .order__button{
+        float: none;
+        margin-top: 20px;
+    }
+
+    .top__left__menu li{
+        float: left;
+    }
+
+    .header__left{
+        margin: 0 auto !important;
+    }
+
+    .lk__link{
+        float: left;
+    }
+
+    .top__basket{
+        float: left;
+    }
+
+    .header__right{
+        margin: 20px auto 0 auto;
+        width: 280px;
+    }
+
+    .bottom__menu__head{
+        text-align: center;
+    }
+
+    .bottom__menu li{
+        text-align: center;
+    }
+
+    .payment__img{
+        float: none;
+        padding-right: 0;
+        border: 0;
+        width: 248px;
+        margin: 0 auto;
+    }
+
+    .bottom__social{
+        float: none;
+        padding-right: 0;
+        border: none;
+        width: 110px;
+        margin: 30px auto;
+    }
+}
+
+@media(max-width: 540px){
+    .sorted li:first-child{
+        margin-left: 0;
+    }
+
+    .sorted{
+        float: none;
+    }
+
+    .filters{
+        float: none;
+        border: none;
+    }
+
+    .block__h1{
+        padding-left: 0;
+        background: none;
+        margin: 0;
+    }
+
+    .block__h1 h1{
+        font-size: 24px;
+    }
+
+    .block__h1 h1 span{
+        font-size: 24px;
+    }
+
+    .header__content{
+        min-height: auto;
+    }
+
+    .categories__index{
+        margin-top: 0;
+    }
+
+    .index__wrap{
+        min-height: 640px;
+    }
+}
+
+@media(max-width: 480px){
+    .owl-carousel .owl-nav{
+        width: auto;
+        width: 77%;
+    }
+
+    .card__color{
+        margin-bottom: 10px;
+    }
+
+    .menu__description li{
+        margin-right: 10px;
+    }
+
+    .cat__center{
+        width: 100%;
+    }
+
+    .cat__right, .cat__left{
+        width: 100%;
+    }
+
+    .cat__right__slogan, .cat__left__slogan{
+        height: auto;
+        min-height: 150px;
+    }
+
+    .cat__left__slogan p, .cat__right__slogan p{
+        position: static;
+        padding: 28px;
+    }
+}
+
+@media(max-width: 430px){
+    .add__button__wrap a{
+        float: none;
+        margin: 10px auto;
+    }
+}
+
+@media(max-width: 400px){
+    .subscription__form__title{
+        font-size: 20px;
+    }
+
+    .subscription__form__wrap a{
+        font-size: 12px;
+        padding-top: 17px;
+        width: 140px;
+    }
+
+    .akcii__screen__wrap{
+        padding: 21px;
+    }
+}
+
+@media(max-width: 360px){
+    .top__left__menu li{
+        margin-right: 10px;
+    }
+
+    .menu__description li a{
+        font-size: 12px;
+    }
+}

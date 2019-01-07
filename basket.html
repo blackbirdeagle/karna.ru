@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Корзина</title>
+
+</head>
+<body>
+
+<div class = "search">
+    <a class = "hide__search" href = "javascript:void(0);">X</a>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-xl-12">
+                <div class = "search__form">
+                    <form >
+                        <input type = "text" placeholder = "Поиск" required/>
+                        <input type = "submit" value = "Найти"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class = "float__menu">
+    <a class = "hide__menu" href = "javascript:void(0);">X</a>
+    <ul>
+        <li><a href = "">Оплата и доставка</a></li>
+        <li><a href = "">Акции и скидки</a></li>
+        <li><a href = "">Личный кабинет</a></li>
+        <li><a href = "">Постельное белье</a></li>
+        <li><a href = "">Шторы</a></li>
+        <li><a href = "">Пледы и покрывала</a></li>
+        <li><a href = "">Ванная</a></li>
+        <li><a href = "">Детям</a></li>
+        <li><a href = "">Одежда и аксессуары</a></li>
+        <li><a href = "">Компания</a></li>
+        <li><a href = "">Контакты</a></li>
+        <li><a href = "">Сотрудничество</a></li>
+        <li><a href = "">Оптовые продажи</a></li>
+        <li><a href = "">Доставка и оплата</a></li>
+        <li><a href = "">Публичная оферта</a></li>
+        <li><a href = "">Политика конфиденциальности</a></li>
+    </ul>
+</div>
+
+<header class = "header header__inner">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                <div class = "header__left">
+                    <a href = "javascript:void(0);" class = "show__menu"></a>
+                    <ul class = "top__left__menu">
+                        <li><a href = "">Оплата и доставка</a></li>
+                        <li><a href = "">Акции и скидки</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class = "col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                <a class = "logo" href = "/"></a>
+            </div>
+            <div class = "col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                <div class = "header__right">
+                    <ul class = "social">
+                        <li><a href = "" target = "_blank"><img src = "images/inst.png"></a></li>
+                        <li><a href = "" target = "_blank"><img src = "images/fb.png"></a></li>
+                    </ul>
+                    <a class = "lk__link" href = "">Личный кабинет</a>
+                    <a class = "top__basket" href = ""><span>12</span><br/>в корзине</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class = "top__menu">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-xl-12">
+                <div class = "top__menu__wrapper">
+                    <ul>
+                        <li><a href = "">Постельное белье</a></li>
+                        <li><a href = "">Шторы</a></li>
+                        <li><a href = "">Пледы и покрывала</a></li>
+                        <li><a href = "">Ванная</a></li>
+                        <li><a href = "">Детям</a></li>
+                        <li><a href = "">Одежда и аксессуары</a></li>
+                    </ul>
+                    <a class = "show__search" href = "javascript:void(0);"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class = "hor__line"></div>
+
+<section class = "content">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-xl-12">
+                <ul class = "breadcrumb">
+                    <li class = "breadcrumb-item"><a href = "">Главная /</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-xl-12">
+                <h1>Корзина</h1>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-xl-7 col-lg-7">
+                <div class = "row list__head">
+                    <div class = "col-md-1 col-sm-1"></div>
+                    <div class = "col-md-6 col-sm-6"><p>Товар</p></div>
+                    <div class = "col-md-3 col-sm-3"><p>Кол-во</p></div>
+                    <div class = "col-md-2 col-sm-2"><p>Стоимость</p></div>
+                </div>
+                <div class = "list__prod">
+                    <div class = "row list__prod__item">
+                        <div class = "col-md-1 col-sm-1"><a class = "list__prod__item__delete" href = "">X</a></div>
+                        <div class = "col-md-2 col-sm-2"><img src = "images/b1.jpg" /></div>
+                        <div class = "col-md-4 col-sm-4"><a class = "list__prod__item__name" href = "">ПЛЕД ВЯЗАНЫЙ "KARNA" SILVIA (220X240) СМ</a></div>
+                        <div class = "col-md-3 col-sm-3">
+                            <div class = "list__prod__item__kolvo">
+                                <input type = "text" value = "1"/>
+                                <a class = "list__prod__item__kolvo__sum" href = ""></a>
+                                <a class = "list__prod__item__kolvo__sub" href = ""></a>
+                            </div>
+                        </div>
+                        <div class = "col-md-2 col-sm-2"><p>3550,00 руб.</p></div>
+                    </div>
+                    <div class = "row list__prod__item">
+                        <div class = "col-md-1 col-sm-1"><a class = "list__prod__item__delete" href = "">X</a></div>
+                        <div class = "col-md-2 col-sm-2"><img src = "images/b1.jpg" /></div>
+                        <div class = "col-md-4 col-sm-4"><a class = "list__prod__item__name" href = "">ПЛЕД ВЯЗАНЫЙ "KARNA" SILVIA (220X240) СМ</a></div>
+                        <div class = "col-md-3 col-sm-3">
+                            <div class = "list__prod__item__kolvo">
+                                <input type = "text" value = "1"/>
+                                <a class = "list__prod__item__kolvo__sum" href = ""></a>
+                                <a class = "list__prod__item__kolvo__sub" href = ""></a>
+                            </div>
+                        </div>
+                        <div class = "col-md-2 col-sm-2"><p>3550,00 руб.</p></div>
+                    </div>
+                </div>
+                <div class = "row promo__code">
+                    <div class = "col-xl-9 ">
+                        <p>У вас есть промо-код на скидку?</p>
+                    </div>
+                    <div class = "col-xl-3">
+                        <a class = "apply__promo" href = "">Применить</a>
+                    </div>
+                </div>
+                <div class = "row summ__order">
+                    <div class = "col-xl-12">
+                        <p>Итого, без доставки: <span>37.500</span> руб.</p>
+                    </div>
+                    <div class = "col-xl-12">
+                        <a class = "checkout" href = "">Оформить заказ</a>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-xl-5 col-lg-5">
+                <div class = "variants__delivery">
+                    <p class = "variants__delivery__head">Варианты доставки</p>
+                    <p class = "variants__delivery__name">Самовызов</p>
+                    <p class = "variants__delivery__text">Фирменный магазин: Москва, Московская 92.
+                        9:00 - 21:00  без обеда и выходных<br/><span>Бесплатно</span></p>
+                    <p class = "variants__delivery__name">Москва и Санкт-Петербург</p>
+                    <p class = "variants__delivery__text">Курьерская служба 10 км за МКАД  - 400 руб.</p>
+                    <p class = "variants__delivery__name">Россия</p>
+                    <p class = "variants__delivery__text">Почта России - 350 руб.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class = "footer footer__inner">
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <p class = "bottom__menu__head">Компания</p>
+                <ul class = "bottom__menu">
+                    <li><a href = "">Компания</a></li>
+                    <li><a href = "">Контакты</a></li>
+                    <li><a href = "">Сотрудничество</a></li>
+                    <li><a href = "">Оптовые продажи</a></li>
+                </ul>
+            </div>
+            <div class = "col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <p class = "bottom__menu__head">Сервис</p>
+                <ul class = "bottom__menu">
+                    <li><a href = "">Доставка и оплата</a></li>
+                    <li><a href = "">Обмен и возврат</a></li>
+                    <li><a href = "">Публичная оферта</a></li>
+                    <li><a href = "">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+            <div class = "col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <div class = "payment__img"><img src = "images/cards.png" /></div>
+                <ul class = "social bottom__social">
+                    <li><a href = "" target = "_blank"><img src = "images/inst_b.png"></a></li>
+                    <li><a href = "" target = "_blank"><img src = "images/fb_b.png"></a></li>
+                </ul>
+            </div>
+            <div class = "col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <div class = "bottom__contacts">
+                    <a href = "tel:+74953220766">+7 495 322-07-66</a>
+                    <a href = "tel:+78006547351">8 800 654-73-51</a>
+                    <p>с 10:00 до 20:00</p>
+                </div>
+                <a href = "mailto:info@karnatextile.ru" class = "bottom__email">info@karnatextile.ru</a>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-xl-12">
+                <p class = "copyright">Copyright Modalin © 2015-2018. Сайт разработан в <a href = "http://www.colortime.ru/">Colortime</a>.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type = "text/javascript" src="js/jquery.min.js"></script>
+<script type = "text/javascript" src="plugins/owl-carousel/owl.carousel.js"></script>
+<script type = "text/javascript" src="js/lemmon-slider.js"></script>
+<script type = "text/javascript" src="js/maskedinput.js"></script>
+<script type = "text/javascript" src="js/script.js"></script>
+</body>
+</html>
